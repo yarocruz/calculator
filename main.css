@@ -1,0 +1,67 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+.calc-body {
+  max-width: 400px;
+  background-color: #EAEAEA;
+  border: 1px solid #D1D1D1;
+  margin: 100px auto;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+#calc-display {
+  display: block;
+  width: 340px;
+  height: 85px;
+  background-color: #fff;
+  margin: 100px auto 50px auto;
+  font-size: 1.5em;
+  text-align: right;
+  padding-right: 10px;
+}
+button {
+  border: none;
+}
+button:focus,
+input:focus {
+  outline: 0;
+}
+.calc-btns {
+  width: 340px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-bottom: 65px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 60px);
+  grid-template-rows: repeat(5, 60px);
+  grid-gap: 25px;
+}
+.btn {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.56em;
+  font-weight: bold;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #000;
+}
+.btn-ac {
+  grid-column-start: 2;
+  background-color: #9B9B9B;
+}
+.btn-percent {
+  background-color: #9B9B9B;
+}
+.btn-operand {
+  background-color: #9B9B9B;
+}
+.btn-equal {
+  background-color: #F87E12;
+}
+.btn-0 {
+  grid-column: span 2;
+  border-radius: 40px;
+}
